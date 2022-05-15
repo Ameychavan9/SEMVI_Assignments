@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Suggestion</title>
+    </head>
+    
+    <body>
+        <input type="text" id="query_input" onkeyup="showSuggestion()" placeholder="type something.">
+        
+        <p id="output">
+
+	</p>
+    </body>
+    
+    <script>
+        var url = "http://192.168.16.1/ty8810/Web/SEM%206/Assignment%2011/Q4/suggest.php";
+        xmlhttp = new XMLHttpRequest();
+	
+	q = document.querySelector("#query_input").value;
+	function showSuggestion(){
+	
+		q = document.querySelector("#query_input").value;
+		console.log(q);
+		xmlhttp.onreadystatechange = function(){
+
+			if(xmlhttp.readyState == 4 && xmlhttp.status==200){
+
+				document.querySelector("#output").innerHTML = xmlhttp.responseText;
+			}
+	}
+
+	xmlhttp.open("GET", url+ "?q=" + q);
+	xmlhttp.send();
+
+	}
+    </script>
+</html>

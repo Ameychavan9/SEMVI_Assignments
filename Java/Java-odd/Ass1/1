@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+class student{
+	int roll,age;
+	String Name;
+
+	student(int r,int a,String n )
+	{
+		this.roll=r;
+		this.a=age;
+		this.Name=n;
+	}
+}
+
+class SortbyName implements Comparator<student>
+{
+	public int compare(student a,student b);
+	{
+		return a.Name-b.Name;
+	}
+}
+
+class SortbyAge implements Comparator<student>
+{
+	public int compare(student a,student b);
+	{
+		return a.age-b.age;
+	}
+}
+
+public class 
+ 

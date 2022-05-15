@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<Course>
+	<Mathematics>
+		<StudentName> Sejal Potbhare </StudentName>
+		<ClassName>TY.Bsc(CS)</ClassName>
+		<Percentage>89</Percentage>
+	</Mathematics>
+
+        <Economics>
+                <StudentName>Surbhi Khandelwal  </StudentName>
+                <ClassName>TY.Bsc(CS)</ClassName>
+                <Percentage>90</Percentage>
+        </Economics>
+
+        <ComputerScience>
+                <StudentName> Aryan Kedare </StudentName>
+                <ClassName>TY.Bsc(CS)</ClassName>
+                <Percentage>99</Percentage>
+        </ComputerScience>
+
+        <ComputerScience>
+                <StudentName> Kabir Birari </StudentName>
+                <ClassName>TY.Bsc(CS)</ClassName>
+                <Percentage>97</Percentage>
+        </ComputerScience>
+
+        <ComputerScience>
+                <StudentName> Parag Chavan </StudentName>
+                <ClassName>TY.Bsc(CS)</ClassName>
+                <Percentage>93</Percentage>
+        </ComputerScience>
+        </Course>
+
+

@@ -1,0 +1,82 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var xmlHttp=false;
+function validate(name)
+{
+ 
+  if(window.XMLHttpRequest)
+	{
+  		xmlHttp=new XMLHttpRequest();
+}
+else if(window.ActiveXObject){
+ 	xmlHttp	=new ActiveXObject("Microsoft.XMLHTTP");
+}
+	//alert("c3");
+	if(xmlHttp==null)
+	{
+	alert("Browser does not support Http request");
+	return;
+	}
+	//XHRobj,open("POST",strURL,true);
+	xmlHttp.open("GET","validate.php?name=" +name,true);
+ 	xmlHttp.onreadystatechange=stateChanged
+	xmlHttp.send(null);
+}
+	
+
+function stateChanged()
+{
+
+	if(xmlHttp.readyState==4)
+	{
+		document.getElementById("res").innerHTML=xmlHttp.responseText;
+		
+	}
+}
+
+
+/*if(XHRobj.readyState==4)
+	{
+		updatepage(XHRobj.responseTest);//calling user defined function
+	}
+}
+	XHRobj.send(strURL);
+
+
+}
+
+function updatepage(str)
+{
+	if(str=="yes")
+	{
+		alert("Welcome User");
+
+	}
+	else{
+	alert("Invalid Login!.Please try again");
+	}
+
+}
+
+function call_login()
+{
+	var username=f1.username.value;
+	var password=f1.password.value;
+	var url="login.php?username="+username+"&password="+password;
+	postRequest(url);
+
+}*/
+</script>
+</head>
+<body>
+<form>
+	UserName:<input type="text" name="name" onKeyUp="validate(this.value)"/>
+	<div id="res"></div>
+	<!--password:<input type=text name=username size="20"><br>>
+
+<input type=button name=a1 value="Login" onclick="call_login()">-->
+</form>
+</body>
+</html>

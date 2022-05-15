@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = ' UTF-8'?>
+<bookstore>
+<books category ="technical">
+<book_no >1</book_no>
+<book_name>def</book_name>
+<author_name>Stephen Hawking</author_name>
+<price>2000</price>
+<year>1990</year>
+</books>
+
+<books category ="Cooking">
+<book_no >2</book_no>
+<book_name>ccc</book_name>
+<author_name>Ranveer Brar</author_name>
+<price>1000</price>
+<year>2021</year>
+</books>
+
+<books category ="C++">
+<book_no >3</book_no>
+<book_name>Data Structures</book_name>
+<author_name>Vimal Arora</author_name>
+<price>950</price>
+<year>2008</year>
+</books>
