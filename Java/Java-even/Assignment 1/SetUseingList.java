@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class SetUseingList{
+public class SetUseingList{
 
 	static LinkedList A = new LinkedList();
 	static LinkedList B = new LinkedList();
